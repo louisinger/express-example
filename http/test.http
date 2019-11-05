@@ -1,0 +1,28 @@
+@host=localhost:3000
+# Quelques requêtes que tu peux test avec Rest Client 
+# (le truc que je t'avais montré sur vscode) sinon Postman
+
+###
+GET http://{{host}}/api/routeType1/test
+
+###
+POST http://{{host}}/api/routeType1/test/post
+Content-Type: application/json
+
+{
+    "body": "test body"
+}
+
+###
+GET http://{{host}}/api/routeType2/test
+
+###
+POST http://{{host}}/api/routeType2/test/post
+Content-Type: application/json
+
+{
+    "body": "test body"
+}
+
+###
+GET http://{{host}}/404wesh
